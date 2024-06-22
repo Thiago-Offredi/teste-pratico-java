@@ -180,10 +180,11 @@ public static void main(String[] args) {
 		for (Map.Entry<String, List<Funcionarios>> entry : map.entrySet()) {
             String funcao = entry.getKey();
             List<Funcionarios> listaFuncionarios = entry.getValue();
-            System.out.println("Função: " + funcao);
+            System.out.println("Função: " + funcao + "\n");
             for (Funcionarios funcionario : listaFuncionarios) {
-                System.out.println( "Nome:" + funcionario.getNome() + "Função: " + funcionario.getFuncao());
+                System.out.println( " Nome: " + funcionario.getNome() + " Função: " + funcionario.getFuncao());
             }
+	    System.out.print("\n");	
         }
 		
 	}
