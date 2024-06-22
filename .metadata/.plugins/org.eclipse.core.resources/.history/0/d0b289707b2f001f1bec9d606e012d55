@@ -1,0 +1,28 @@
+package teste_programacao;
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		
+		Funcionarios f1 = new Funcionarios();
+		double salarioDouble = 2500.0;
+		BigDecimal salarioBigDecimal = BigDecimal.valueOf(salarioDouble);
+		f1.setSalario(salarioBigDecimal);
+		System.out.println(f1.getSalario());
+		f1.setFuncao("Desenvolvedor");
+		System.out.print(f1.getFuncao());
+		f1.setNome("Thiago");
+		System.out.println(f1.getNome());
+		LocalDate dataNascimento = LocalDate.of(1990, 8, 11);
+		f1.setDataNascimento(dataNascimento);
+		System.out.print(f1.getDataNascimento());
+		
+		
+		
+		
+	}
+
+}

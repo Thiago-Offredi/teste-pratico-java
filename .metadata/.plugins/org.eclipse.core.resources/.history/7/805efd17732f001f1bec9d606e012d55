@@ -1,0 +1,16 @@
+package teste_programacao;
+import java.time.LocalDate;
+;
+public class Teste {
+
+	public static void main(String[] args) {
+		Pessoa p1 = new Pessoa();
+		p1.setNome("Rafa");
+		System.out.print(p1.getNome());
+		
+		LocalDate dataNascimento = LocalDate.of(1990, 8, 11);
+		p1.setDataNascimento(dataNascimento);
+
+	}
+
+}

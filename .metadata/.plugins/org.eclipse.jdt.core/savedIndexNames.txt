@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\ws-testepratico\.metadata\.plugins\org.eclipse.jdt.core
+700814881.index
+3872296473.index
+1865797976.index

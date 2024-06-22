@@ -1,0 +1,58 @@
+package teste_programacao;
+
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+//import java.time.Month;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+
+
+import Entidades.Funcionarios;
+
+
+public class Teste  {
+	
+public static void main(String[] args) {
+
+	List<Funcionarios> funcionario = new ArrayList<>();
+	
+	insertEmployee(funcionario);
+	printBirthdays(funcionario);
+	
+}
+	
+	private static void insertEmployee(List<Funcionarios> funcionario) {
+		
+		funcionario.add(new Funcionarios("Maria", LocalDate.of(2000, 10, 18), new BigDecimal("2009.44"), "Operador"));
+		funcionario.add(new Funcionarios("João", LocalDate.of(1990, 5, 12), new BigDecimal("2284.38"), "Operador"));
+		funcionario.add(new Funcionarios("Caio", LocalDate.of(1961, 5, 2), new BigDecimal("9836.14"), "Coordenador"));
+		funcionario.add(new Funcionarios("Miguel", LocalDate.of(1988, 10, 14), new BigDecimal("1919.88"), "Diretor"));
+		funcionario.add(new Funcionarios("Alice", LocalDate.of(1995, 1, 5), new BigDecimal("2234.68"), "Recepcionista"));
+		funcionario.add(new Funcionarios("Heitor", LocalDate.of(1999, 11, 19), new BigDecimal("1582.72"), "Operador"));
+		funcionario.add(new Funcionarios("Arthur", LocalDate.of(1993, 3, 31), new BigDecimal("4071.84"), "Contador"));
+		funcionario.add(new Funcionarios("Laura", LocalDate.of(1994, 7, 8), new BigDecimal("3017.45"), "Gerente"));
+		funcionario.add(new Funcionarios("Heloisa", LocalDate.of(2003, 5, 24), new BigDecimal("1606.85"), "Eletricista"));
+		funcionario.add(new Funcionarios("Helena", LocalDate.of(1996, 9, 2), new BigDecimal("2799.93"), "Gerente"));	
+		
+	}
+	
+
+	
+	private static void printBirthdays(List<Funcionarios> funcionarios) {
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		System.out.println("Nome:| Data de Nascimento:| Salário:| Função:| ");
+        for (Funcionarios funcionario : funcionarios) {
+        	int mes = funcionario.getDataNascimento().getMonthValue();
+        	if(mes == 10 || mes == 12) {
+        		  System.out.printf(" %s| %s|  %.2f|  %s%n",
+                          funcionario.getNome(),
+                          funcionario.getDataNascimento().format(formatter),
+                          funcionario.getSalario(),
+                          funcionario.getFuncao());
+        	}
+          
+        }
+	}
+	
+}

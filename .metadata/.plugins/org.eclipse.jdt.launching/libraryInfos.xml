@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+    <libraryInfo home="C:\Users\Thiago\Downloads\eclipse-jee-2024-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530\jre" version="21.0.3"/>
+    <libraryInfo home="C:\Users\Thiago\Downloads\eclipse-jee-2024-06-R-win32-x86_64\eclipse\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.3.v20240426-1530" version="21.0.3">
+        <bootpath>
+            <entry path="null"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="null"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="null"/>
+        </endorsedDirs>
+    </libraryInfo>
+    <libraryInfo home="C:\Development\Tools\JAVA" version="1.8.0_202">
+        <bootpath>
+            <entry path="C:\Development\Tools\JAVA\lib\resources.jar"/>
+            <entry path="C:\Development\Tools\JAVA\lib\rt.jar"/>
+            <entry path="C:\Development\Tools\JAVA\lib\sunrsasign.jar"/>
+            <entry path="C:\Development\Tools\JAVA\lib\jsse.jar"/>
+            <entry path="C:\Development\Tools\JAVA\lib\jce.jar"/>
+            <entry path="C:\Development\Tools\JAVA\lib\charsets.jar"/>
+            <entry path="C:\Development\Tools\JAVA\lib\jfr.jar"/>
+            <entry path="C:\Development\Tools\JAVA\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="C:\Development\Tools\JAVA\lib\ext"/>
+            <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="C:\Development\Tools\JAVA\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
+</libraryInfos>

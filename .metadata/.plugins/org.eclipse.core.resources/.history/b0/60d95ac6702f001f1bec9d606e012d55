@@ -1,0 +1,13 @@
+package teste_programacao;
+import teste_programacao.Pessoa;
+public class Teste {
+
+	public static void main(String[] args) {
+		Pessoa p1 = new Pessoa();
+		p1.setNome("Rafa");
+		System.out.print(p1.getNome());
+		//p1.setDataNascimento();
+
+	}
+
+}
